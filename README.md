@@ -24,11 +24,28 @@ I'm **Srinivasan Palanivel**, a Java Full Stack Developer with 2.8+ years at **F
 
 ## 🛠️ Tech Stack
 
+### Core Technologies
 - **HTML5 / CSS3 / Vanilla JS** — no frameworks, no build tools
 - **Google Fonts** — Syne, DM Sans, JetBrains Mono
 - **Web3Forms** — contact form API
 - **Canvas API** — particle animations
 - **GitHub Pages** — hosting
+
+### Advanced CSS Features
+- **CSS Custom Properties (Variables)** — Dynamic theming system
+- **CSS Grid & Flexbox** — Modern layout systems
+- **CSS Animations & Transitions** — Smooth, performant animations
+- **CSS Transforms** — 3D effects and parallax
+- **CSS Filters** — Backdrop blur and visual effects
+
+### Advanced JavaScript Features
+- **Custom Cursor System** — Animated cursor with dot and ring
+- **Parallax Effects** — Mouse-following background animations
+- **3D Card Tilt Effects** — Interactive card rotations using `perspective()`
+- **Magnetic Button Animations** — Buttons that follow mouse movement
+- **Scroll Progress Indicator** — Visual scroll progress bar
+- **Intersection Observer API** — Scroll-triggered animations and active nav highlighting
+- **RequestAnimationFrame** — Smooth 60fps animations
 
 ---
 
@@ -48,8 +65,16 @@ I'm **Srinivasan Palanivel**, a Java Full Stack Developer with 2.8+ years at **F
 ## 📬 Contact
 
 - **Email:** srinivasanpalanivel4@gmail.com
+- **Phone:** +91 9360161838
 - **LinkedIn:** [linkedin.com/in/srinivasanpalanivel](https://www.linkedin.com/in/srinivasanpalanivel/)
+- **GitHub:** [github.com/Srini-05](https://github.com/Srini-05)
+- **Portfolio:** [srini-05.github.io/portfolio](https://srini-05.github.io/portfolio/)
 
 ---
 
 © 2026 Srinivasan Palanivel
+
+---
+
+**Built with ❤️ by Srinivasan**</content>
+<parameter name="filePath">
