@@ -723,6 +723,15 @@ section { padding: 7rem 5%; }
   margin-bottom: 0.4rem;
 }
 .skill-bar-label span:last-child { color: var(--cyan); }
+.skill-bar-desc {
+  font-size: 0.65rem;
+  color: var(--muted2);
+  opacity: 0.7;
+  margin: 0 0 0.45rem;
+  font-family: var(--font-body);
+  font-style: italic;
+  line-height: 1.4;
+}
 .skill-bar-track {
   height: 4px;
   background: var(--surface2);
@@ -1583,51 +1592,63 @@ footer {
     <div class="skill-bar-title reveal">Core Proficiencies</div>
     <div id="skillBarsContainer">
       <div class="skill-bar-item reveal reveal-delay-1">
-        <div class="skill-bar-label"><span>Java &amp; Spring Boot</span><span>95%</span></div>
+        <div class="skill-bar-label"><span>☕ Java &amp; Spring Boot</span><span>95%</span></div>
+        <p class="skill-bar-desc">Primary language for 2.8+ years; built production Spring Boot microservices at Ford Pro</p>
         <div class="skill-bar-track"><div class="skill-bar-fill" data-width="95"></div></div>
       </div>
       <div class="skill-bar-item reveal reveal-delay-2">
-        <div class="skill-bar-label"><span>ReactJS &amp; Frontend</span><span>88%</span></div>
+        <div class="skill-bar-label"><span>⚛️ ReactJS &amp; Frontend</span><span>88%</span></div>
+        <p class="skill-bar-desc">Delivered CSVA modernised UI, COC feature &amp; Vehicle Integration System (10+ UI pages) using React, hooks, Redux, TypeScript &amp; UCL (Ford's internal design system)</p>
         <div class="skill-bar-track"><div class="skill-bar-fill" data-width="88"></div></div>
       </div>
       <div class="skill-bar-item reveal reveal-delay-3">
-        <div class="skill-bar-label"><span>REST APIs &amp; Microservices</span><span>92%</span></div>
+        <div class="skill-bar-label"><span>🔗 REST APIs &amp; Microservices</span><span>92%</span></div>
+        <p class="skill-bar-desc">Designed &amp; integrated 25+ REST APIs across Upfit Service and CSVA modernisation</p>
         <div class="skill-bar-track"><div class="skill-bar-fill" data-width="92"></div></div>
       </div>
       <div class="skill-bar-item reveal reveal-delay-4">
-        <div class="skill-bar-label"><span>GCP &amp; Cloud</span><span>82%</span></div>
+        <div class="skill-bar-label"><span>☁️ GCP &amp; Cloud</span><span>82%</span></div>
+        <p class="skill-bar-desc">Used Cloud Scheduler, Pub/Sub, Firestore &amp; Cloud Storage in Ford Pro production environments</p>
         <div class="skill-bar-track"><div class="skill-bar-fill" data-width="82"></div></div>
       </div>
       <div class="skill-bar-item reveal reveal-delay-5">
-        <div class="skill-bar-label"><span>Testing &amp; TDD</span><span>90%</span></div>
+        <div class="skill-bar-label"><span>🧪 Testing &amp; TDD</span><span>90%</span></div>
+        <p class="skill-bar-desc">TDD-first mindset; JUnit, Mockito, Jest &amp; Cypress — consistently maintained 90%+ code coverage</p>
         <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90"></div></div>
       </div>
       <div class="skill-bar-item reveal reveal-delay-1">
-        <div class="skill-bar-label"><span>SonarQube &amp; Code Quality</span><span>88%</span></div>
+        <div class="skill-bar-label"><span>🔍 SonarQube &amp; Code Quality</span><span>88%</span></div>
+        <p class="skill-bar-desc">Enforced Quality Gate compliance and resolved code smells across all Ford Pro CI/CD pipelines</p>
         <div class="skill-bar-track"><div class="skill-bar-fill" data-width="88"></div></div>
       </div>
       <div class="skill-bar-item reveal reveal-delay-2">
-        <div class="skill-bar-label"><span>Checkmarx &amp; Security Scanning</span><span>85%</span></div>
+        <div class="skill-bar-label"><span>🛡️ Checkmarx &amp; Security Scanning</span><span>85%</span></div>
+        <p class="skill-bar-desc">Resolved SAST vulnerabilities and embedded security gates in Tekton CI/CD pipelines</p>
         <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
       </div>
       <div class="skill-bar-item reveal reveal-delay-3">
-        <div class="skill-bar-label"><span>42Crunch &amp; API Security</span><span>83%</span></div>
+        <div class="skill-bar-label"><span>🔒 42Crunch &amp; API Security</span><span>83%</span></div>
+        <p class="skill-bar-desc">Applied OAS conformance and security scoring to all REST API contracts at Ford Pro</p>
         <div class="skill-bar-track"><div class="skill-bar-fill" data-width="83"></div></div>
       </div>
       <div class="skill-bar-item reveal reveal-delay-4">
-        <div class="skill-bar-label"><span>FOSSA &amp; License Compliance</span><span>82%</span></div>
+        <div class="skill-bar-label"><span>📋 FOSSA &amp; License Compliance</span><span>82%</span></div>
+        <p class="skill-bar-desc">Managed open-source license risk scanning across Ford Pro microservices in production pipelines</p>
         <div class="skill-bar-track"><div class="skill-bar-fill" data-width="82"></div></div>
       </div>
       <div class="skill-bar-item reveal reveal-delay-5">
-        <div class="skill-bar-label"><span>Quantum Metric &amp; Analytics</span><span>80%</span></div>
+        <div class="skill-bar-label"><span>📊 Quantum Metric &amp; Analytics</span><span>80%</span></div>
+        <p class="skill-bar-desc">Tracked user session analytics and conversion funnels for CSVA &amp; Upfit Service UIs</p>
         <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div>
       </div>
       <div class="skill-bar-item reveal reveal-delay-5">
-        <div class="skill-bar-label"><span>Datadog &amp; Observability</span><span>82%</span></div>
+        <div class="skill-bar-label"><span>🐕 Datadog &amp; Observability</span><span>82%</span></div>
+        <p class="skill-bar-desc">Configured dashboards and alerts for microservice health &amp; performance monitoring at Ford Pro</p>
         <div class="skill-bar-track"><div class="skill-bar-fill" data-width="82"></div></div>
       </div>
       <div class="skill-bar-item reveal reveal-delay-5">
-        <div class="skill-bar-label"><span>SQL &amp; Database Design</span><span>87%</span></div>
+        <div class="skill-bar-label"><span>🗄️ SQL &amp; Database Design</span><span>87%</span></div>
+        <p class="skill-bar-desc">Designed PostgreSQL &amp; MySQL schemas; wrote complex queries and optimised joins for production use</p>
         <div class="skill-bar-track"><div class="skill-bar-fill" data-width="87"></div></div>
       </div>
     </div>
@@ -2147,13 +2168,30 @@ footer {
             <div class="contact-link-val">linkedin.com/in/srinivasan-p</div>
           </div>
         </a>
-        <div class="contact-link" style="cursor:default;">
+        <a
+          href="https://github.com/Srini-05"
+          class="contact-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div class="contact-link-icon">🐙</div>
+          <div>
+            <div class="contact-link-label">GitHub</div>
+            <div class="contact-link-val">github.com/Srini-05</div>
+          </div>
+        </a>
+        <a
+          href="https://srini-05.github.io/portfolio/#"
+          class="contact-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <div class="contact-link-icon">🌐</div>
           <div>
             <div class="contact-link-label">Portfolio</div>
-            <div class="contact-link-val">https://srini-05.github.io/portfolio/</div>
+            <div class="contact-link-val">https://srini-05.github.io/portfolio/#</div>
           </div>
-        </div>
+        </a>
         <div class="contact-link" style="cursor:default;">
           <div class="contact-link-icon">📍</div>
           <div>
@@ -2201,7 +2239,7 @@ footer {
   </div>
   <div class="footer-social">
     <a href="https://www.linkedin.com/in/srinivasanpalanivel/" title="LinkedIn" target="_blank" rel="noopener noreferrer">💼</a>
-    <a href="#" title="GitHub (coming soon)">🐙</a>
+    <a href="https://github.com/Srini-05" title="GitHub" target="_blank" rel="noopener noreferrer">🐙</a>
     <a href="mailto:srinivasanpalanivel4@gmail.com" title="Email">✉️</a>
     <a href="#hero" title="Portfolio">🌐</a>
   </div>
