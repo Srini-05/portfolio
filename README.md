@@ -8,7 +8,7 @@
 
 ## 👨‍💻 About
 
-I'm **Srinivasan Palanivel**, a Java Full Stack Developer with 2.8+ years at **Ford Pro Data & Tech**, Chennai. This portfolio showcases my skills, projects, experience, and background.
+I'm **Srinivasan Palanivel**, a Software Engineer at **Entomo Labs** | **3.2+ Years** of total experience, including tenure as a Java Full Stack Developer at **Ford Pro Data & Tech**, Chennai. This portfolio showcases my skills, projects, experience, and background.
 
 ---
 

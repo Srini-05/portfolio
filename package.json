@@ -1,0 +1,17 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Srinivasan Palanivel Portfolio",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx -y live-server --port=5500"
+  },
+  "keywords": [
+    "portfolio",
+    "vanilla-js",
+    "html5",
+    "css3"
+  ],
+  "author": "Srinivasan Palanivel",
+  "license": "MIT"
+}
