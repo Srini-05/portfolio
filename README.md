@@ -1,4 +1,4 @@
-# 🚀 Srinivasan Palanivel — Portfolio
+# 🚀 Srinivasan — Portfolio
 
 > Personal portfolio website built with vanilla HTML, CSS, and JavaScript.
 
@@ -8,7 +8,7 @@
 
 ## 👨‍💻 About
 
-I'm **Srinivasan Palanivel**, a Software Engineer at **Entomo Labs** | **3.2+ Years** of total experience, including tenure as a Java Full Stack Developer at **Ford Pro Data & Tech**, Chennai. This portfolio showcases my skills, projects, experience, and background.
+I'm **Srinivasan**, a Software Engineer at **Ford Motor Company** | **3.2+ Years** of total experience, including tenure as a Java Full Stack Developer at **Ford Pro Data & Tech**, Chennai. This portfolio showcases my skills, projects, experience, and background.
 
 ---
 
@@ -72,7 +72,7 @@ I'm **Srinivasan Palanivel**, a Software Engineer at **Entomo Labs** | **3.2+ Ye
 
 ---
 
-© 2026 Srinivasan Palanivel
+© 2026 Srinivasan
 
 ---
 

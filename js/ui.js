@@ -62,16 +62,22 @@ export function initUI() {
     // Active nav link
     const sections = document.querySelectorAll('section[id]');
     const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          navLinks.forEach(a => {
-            a.classList.toggle('active', a.getAttribute('href') === '#' + e.target.id);
-          });
+    function highlightNav() {
+      let activeSectionId = '';
+      sections.forEach(s => {
+        const rect = s.getBoundingClientRect();
+        if (rect.top < window.innerHeight * 0.45 && rect.bottom > 120) {
+          activeSectionId = s.id;
         }
       });
-    }, { threshold: 0.35 });
-    sections.forEach(s => observer.observe(s));
+      if (activeSectionId) {
+        navLinks.forEach(a => {
+          a.classList.toggle('active', a.getAttribute('href') === '#' + activeSectionId);
+        });
+      }
+    }
+    window.addEventListener('scroll', highlightNav);
+    highlightNav();
 
     // Hamburger
     const ham = document.getElementById('hamburger');
@@ -158,16 +164,14 @@ export function initUI() {
     // Dynamic Experience Updates
     const careerStartDate = new Date('2023-01-23'); // Total experience start
     const fullTimeStartDate = new Date('2023-07-17'); // Started Full-time @ Ford
-    const fordProEndDate = new Date('2026-03-31'); // Last day at Ford
-    const entomoStartDate = new Date('2026-04-15');
     const now = new Date();
 
     // Calculate Total Experience (Dynamic)
     const diffTotal = Math.abs(now - careerStartDate);
     const totalYears = (diffTotal / (1000 * 60 * 60 * 24 * 365.25)).toFixed(1);
 
-    // Calculate Ford Pro Experience (Fixed at 2.7 years)
-    const diffFord = Math.abs(fordProEndDate - fullTimeStartDate);
+    // Calculate Ford Pro Experience (Dynamic)
+    const diffFord = Math.abs(now - fullTimeStartDate);
     const fordYears = (diffFord / (1000 * 60 * 60 * 24 * 365.25)).toFixed(1);
 
     // Update total experience elements
@@ -179,26 +183,6 @@ export function initUI() {
     document.querySelectorAll('.ford-pro-exp').forEach(el => {
       el.textContent = fordYears;
     });
-
-    // Entomo Labs Experience Calculation (Dynamic)
-    function updateEntomoExp() {
-      const now = new Date();
-      const diffEntomo = Math.abs(now - entomoStartDate);
-      const days = Math.floor(diffEntomo / (1000 * 60 * 60 * 24));
-      const months = (diffEntomo / (1000 * 60 * 60 * 24 * 30.44)).toFixed(1);
-      
-      let res = "";
-      if (days < 31) {
-        res = `${days} Day${days === 1 ? '' : 's'}`;
-      } else {
-        res = `${months} Month${months === "1.0" ? '' : 's'}`;
-      }
-      
-      document.querySelectorAll('.entomo-exp').forEach(el => {
-        el.textContent = res;
-      });
-    }
-    updateEntomoExp();
 
     const metaTags = ['description', 'og:description', 'twitter:description'];
     metaTags.forEach(name => {

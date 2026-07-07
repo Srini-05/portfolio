@@ -193,7 +193,7 @@ nav.scrolled {
   align-items: center;
   position: relative;
   overflow: hidden;
-  padding: 0 5%;
+  padding: calc(var(--nav-h) + 2rem) 5% 4rem 5%;
 }
 #hero-canvas {
   position: absolute;
@@ -205,7 +205,7 @@ nav.scrolled {
   top: 0; left: 0;
   width: 100vw; height: 100vh;
   pointer-events: none;
-  z-index: 0;
+  z-index: 1;
 }
 .hero-grid-overlay {
   position: absolute;
@@ -477,7 +477,15 @@ nav.scrolled {
 /* ══════════════════════════════════════════
    SECTION SHARED
 ══════════════════════════════════════════ */
-section { padding: 7rem 5%; }
+section {
+  padding: 7rem 5%;
+  position: relative;
+  z-index: 0;
+}
+section > * {
+  position: relative;
+  z-index: 2;
+}
 .section-label {
   display: inline-flex; align-items: center; gap: 0.6rem;
   font-family: var(--font-mono);
@@ -769,41 +777,47 @@ section { padding: 7rem 5%; }
 
 /* Proficiency Bars */
 .skill-bars { margin-top: 3rem; }
+.skill-bars-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  width: 100%;
+}
 .skill-bar-title {
   font-family: var(--font-head);
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
-  color: var(--muted2);
+  color: var(--text);
 }
-.skill-bar-item { margin-bottom: 1.1rem; }
+.skill-bar-item { margin-bottom: 0; }
 .skill-bar-label {
   display: flex; justify-content: space-between;
   font-family: var(--font-mono);
-  font-size: 0.72rem;
-  color: var(--muted2);
-  margin-bottom: 0.4rem;
+  font-size: 0.88rem;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+  font-weight: 500;
 }
 .skill-bar-label span:last-child { color: var(--cyan); }
 .skill-bar-desc {
-  font-size: 0.65rem;
+  font-size: 0.82rem;
   color: var(--muted2);
-  opacity: 0.7;
-  margin: 0 0 0.45rem;
+  opacity: 0.85;
+  margin: 0 0 0.6rem;
   font-family: var(--font-body);
-  font-style: italic;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 .skill-bar-track {
-  height: 4px;
+  height: 6px;
   background: var(--surface2);
-  border-radius: 2px;
+  border-radius: 3px;
   overflow: hidden;
 }
 .skill-bar-fill {
   height: 100%;
   background: linear-gradient(90deg, var(--cyan), var(--cyan2));
-  border-radius: 2px;
+  border-radius: 3px;
   width: 0%;
   transition: width 1.2s var(--ease);
 }
